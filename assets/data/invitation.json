@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "pageTitle": "50 Años de Antonio Pachuca"
+  },
+  "site": {
+    "couple": "Antonio Pachuca"
+  },
+  "nav": {
+    "left": [
+      {
+        "label": "Bienvenida",
+        "href": "#presentation"
+      },
+      {
+        "label": "Ubicación",
+        "href": "#location"
+      },
+      {
+        "label": "Programa",
+        "href": "#timeline"
+      }
+    ],
+    "right": [
+      {
+        "label": "Vestimenta",
+        "href": "#dresscode"
+      },
+      {
+        "label": "Galería",
+        "href": "#gallery"
+      },
+      {
+        "label": "Confirmación",
+        "href": "#rsvp"
+      }
+    ]
+  },
+  "music": {
+    "src": "assets/audio/cancion.mp3",
+    "autoplay": true
+  },
+  "hero": {
+    "pretitle": "Celebrando 50 Años",
+    "names": "Antonio Pachuca",
+    "date": "2026-06-19T19:00:00",
+    "background": "assets/img/hero.png"
+  },
+  "presentation": {
+    "title": "Una noche inolvidable",
+    "parents": [],
+    "padrinos": [],
+    "text": "Con mucha alegría quiero celebrar contigo mis 50 años. Será una noche especial llena de música, recuerdos, risas y momentos inolvidables. Tu presencia hará esta celebración aún más especial.",
+    "icon": "assets/img/copas.svg"
+  },
+  "gratitude": {
+    "title": "Gracias por acompañarme",
+    "text": "Gracias por formar parte de mi vida y compartir este momento tan importante. ¡Prepárate para una noche increíble!"
+  },
+  "location": {
+    "title": "Celebración",
+    "subtitle": "Fecha y ubicación",
+    "dateText": "19 · Junio · 2026",
+    "places": [
+      {
+        "title": "Recepción",
+        "time": "07:00 PM",
+        "image": "assets/img/recepcion.png",
+        "place": "Hotel Posada Señorial",
+        "address": "Av. 5 de Mayo 1400, San Juan Aquiahuac, 72810 San Andrés Cholula, Pue.",
+        "map": "https://maps.app.goo.gl/qfFVjN7obEEP9h3U9"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Programa",
+    "items": [
+      {
+        "time": "07:00 PM",
+        "text": "Recepción de invitados",
+        "icon": "assets/img/3.svg"
+      },
+      {
+        "time": "08:00 PM",
+        "text": "Cena y brindis",
+        "icon": "assets/img/4.svg"
+      },
+      {
+        "time": "09:30 PM",
+        "text": "Música y celebración",
+        "icon": "assets/img/6.svg"
+      },
+      {
+        "time": "11:00 PM",
+        "text": "Pastel y fotografías",
+        "icon": "assets/img/7.svg"
+      }
+    ]
+  },
+  "dresscode": {
+    "title": "Código de Vestimenta",
+    "type": "Elegante",
+    "image": "assets/img/9.svg",
+    "menTitle": "",
+    "womenTitle": "",
+    "men": [],
+    "women": [],
+    "note": "Vestimenta elegante en tonos oscuros, negro y dorado ✨"
+  },
+  "gifts": {
+    "title": "Tu presencia es mi mejor regalo",
+    "intro": "Lo más importante para mí es compartir esta noche contigo y celebrar juntos este gran momento.",
+    "options": [
+      {
+        "title": "",
+        "description": "",
+        "type": "text"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería",
+    "type": "images",
+    "items": [
+      "assets/img/gallery/1.jpg",
+      "assets/img/gallery/2.jpg",
+      "assets/img/gallery/3.jpg",
+      "assets/img/gallery/4.jpg",
+      "assets/img/gallery/5.jpg",
+      "assets/img/gallery/6.jpg"
+    ]
+  },
+  "rsvp": {
+    "phone": "5210000000000",
+    "title": "Confirmación de Asistencia",
+    "intro": "Será un honor contar contigo en esta noche tan especial. Por favor confirma tu asistencia.",
+    "fields": {
+      "namePlaceholder": "Nombre completo",
+      "attendancePlaceholder": "¿Podrás acompañarnos?",
+      "attendanceOptions": [
+        "Sí asistiré",
+        "No podré asistir"
+      ],
+      "messagePlaceholder": "Escribe un mensaje",
+      "buttonText": "Confirmar por WhatsApp"
+    },
+    "note": "Agradecemos confirmar antes del <strong>10 de junio de 2026</strong>.",
+    "success": "Gracias por confirmar"
+  },
+  "footer": {
+    "names": "50 Años de Antonio Pachuca",
+    "credits": "Diseñado con amor por Shiny Maker Studio"
+  }
+}
