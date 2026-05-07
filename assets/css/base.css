@@ -400,37 +400,52 @@ p {
 /* ============================= */
 
 @media (max-width: 480px) {
+
   .envelope {
-    transform: scale(0.72);
-    transform-origin: center;
+    width: 320px;
+    height: 180px;
+
+    background: var(--color-envelope);
+
+    box-shadow:
+      inset 0 2px 0 rgba(255,255,255,.35),
+      0 12px 28px rgba(0,0,0,.28);
   }
 
+  /* SOLAPA FRONTAL */
+  .flap.front {
+    border-width: 90px 160px;
+
+    border-left-color: #b88b2d;
+    border-right-color: #b88b2d;
+    border-bottom-color: #9f741d;
+    border-top-color: transparent;
+  }
+
+  .flap.front::after {
+    left: -160px;
+    bottom: -90px;
+
+    border-width: 88px 160px;
+  }
+
+  /* SOLAPA SUPERIOR */
+  .flap.top {
+    border-width: 95px 160px;
+
+    border-top-color: #d2a446;
+
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  /* SELLO */
   .seal img {
-    width: 80px;
-    height: 80px;
-    animation: sealIdleMobile 2.8s ease-in-out infinite;
-    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+    width: 82px;
+    height: 82px;
   }
 
-  @keyframes sealIdleMobile {
-    0% {
-      transform: scale(1);
-    }
-    40% {
-      transform: scale(1.06);
-    }
-    70% {
-      transform: scale(1.02);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .seal.press img {
-    transform: scale(0.85);
-    filter: blur(0.4px);
-  }
 }
 
 .section + .footer {
