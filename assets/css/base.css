@@ -281,7 +281,7 @@ p {
   border-width: 118px 210px;
   border-left-color: var(--color-envelope);
   border-right-color: var(--color-envelope);
-  border-bottom-color: color-mix(in srgb, var(--color-envelope) 92%, black);
+  border-bottom-color: #9a741f;
   border-top-color: transparent;
   z-index: 3;
 
@@ -305,7 +305,7 @@ p {
 /* solapa superior (más clara y marcada) */
 .flap.top {
   border-width: 125px 210px;
-  border-top-color: color-mix(in srgb, var(--color-envelope) 80%, white);
+  border-top-color: #d8b45c;
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
