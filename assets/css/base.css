@@ -246,15 +246,15 @@ p {
   background:
     linear-gradient(
       45deg,
-      rgba(255,255,255,0.001) 48.8%,
+      rgba(255, 255, 255, 0.001) 48.8%,
       rgba(0, 0, 0, 0.08) 50%,
-      rgba(255,255,255,0.001) 51.2%
+      rgba(255, 255, 255, 0.001) 51.2%
     ),
     linear-gradient(
       -45deg,
-      rgba(255,255,255,0.001) 48.8%,
+      rgba(255, 255, 255, 0.001) 48.8%,
       rgba(0, 0, 0, 0.08) 50%,
-      rgba(255,255,255,0.001) 51.2%
+      rgba(255, 255, 255, 0.001) 51.2%
     );
   pointer-events: none;
   z-index: 2;
@@ -276,7 +276,7 @@ p {
   border-width: 118px 210px;
   border-left-color: var(--color-envelope);
   border-right-color: var(--color-envelope);
-  border-bottom-color: color-mix(in srgb, var(--color-envelope) 92%, black);
+  border-bottom-color: var(--color-envelope);
   border-top-color: rgba(255, 255, 255, 0.001);
   z-index: 3;
 
@@ -300,10 +300,10 @@ p {
 /* solapa superior (más clara y marcada) */
 .flap.top {
   border-width: 125px 210px;
-  border-top-color: color-mix(in srgb, var(--color-envelope) 80%, white);
-  border-left-color: rgba(255,255,255,0.001);
-border-right-color: rgba(255,255,255,0.001);
-border-bottom-color: rgba(255,255,255,0.001);
+  border-top-color:var(--color-envelope);
+  border-left-color: rgba(255, 255, 255, 0.001);
+  border-right-color: rgba(255, 255, 255, 0.001);
+  border-bottom-color: rgba(255, 255, 255, 0.001);
 
   transform-origin: top center;
   z-index: 4;
@@ -395,14 +395,13 @@ border-bottom-color: rgba(255,255,255,0.001);
 /* ============================= */
 
 @media (max-width: 480px) {
-
   .envelope {
     width: 320px;
     height: 180px;
 
     box-shadow:
-      inset 0 2px 0 rgba(255,255,255,.35),
-      0 12px 28px rgba(0,0,0,.28);
+      inset 0 2px 0 rgba(255, 255, 255, 0.35),
+      0 12px 28px rgba(0, 0, 0, 0.28);
   }
 
   /* SOLAPA FRONTAL */
@@ -411,14 +410,9 @@ border-bottom-color: rgba(255,255,255,0.001);
 
     border-left-color: var(--color-envelope);
     border-right-color: var(--color-envelope);
+    border-bottom-color: var(--color-envelope);
 
-    border-bottom-color: color-mix(
-      in srgb,
-      var(--color-envelope) 92%,
-      black
-    );
-
-    border-top-color: rgba(255,255,255,0.001);
+    border-top-color: rgba(255, 255, 255, 0.001);
   }
 
   .flap.front::after {
@@ -429,24 +423,20 @@ border-bottom-color: rgba(255,255,255,0.001);
 
     border-bottom-color: rgba(0, 0, 0, 0.06);
 
-    border-left-color: rgba(255,255,255,0.001);
-    border-right-color: rgba(255,255,255,0.001);
-    border-top-color: rgba(255,255,255,0.001);
+    border-left-color: rgba(255, 255, 255, 0.001);
+    border-right-color: rgba(255, 255, 255, 0.001);
+    border-top-color: rgba(255, 255, 255, 0.001);
   }
 
   /* SOLAPA SUPERIOR */
   .flap.top {
     border-width: 95px 160px;
 
-    border-top-color: color-mix(
-      in srgb,
-      var(--color-envelope) 80%,
-      white
-    );
+    border-top-color: var(--color-envelope);
 
-    border-left-color: rgba(255,255,255,0.001);
-    border-right-color: rgba(255,255,255,0.001);
-    border-bottom-color: rgba(255,255,255,0.001);
+    border-left-color: rgba(255, 255, 255, 0.001);
+    border-right-color: rgba(255, 255, 255, 0.001);
+    border-bottom-color: rgba(255, 255, 255, 0.001);
   }
 
   /* SELLO */
@@ -454,9 +444,8 @@ border-bottom-color: rgba(255,255,255,0.001);
     width: 82px;
     height: 82px;
 
-    filter:
-      drop-shadow(0 6px 10px rgba(0,0,0,.25))
-      drop-shadow(0 2px 3px rgba(255,255,255,.25));
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25))
+      drop-shadow(0 2px 3px rgba(255, 255, 255, 0.25));
   }
 }
 
