@@ -3,8 +3,8 @@
      BRAND / IDENTIDAD
      ========================= */
 
-  --color-primary: #c8a24d; /* ✨ dorado principal */
-  --color-accent: #e6cf8b; /* ✨ dorado suave elegante */
+  --color-primary: #d8b45c;
+  --color-accent: #f0d78d;
   --color-envelope: #b88b2d; /* ✨ dorado profundo */
   --color-gold: #d4af37;
   --color-gold-soft: #e8d7a5;
@@ -14,8 +14,8 @@
      BACKGROUNDS
      ========================= */
 
-  --bg-main: #0f0f0f;
-  --bg-section: #171717; /* negro elegante */
+  --bg-main: #0b0b0c;
+  --bg-section: #121212;
   --bg-overlay: rgba(0, 0, 0, 0.65);
 
   /* =========================
@@ -23,8 +23,8 @@
      ========================= */
 
   --text-primary: #ffb300;
-  --text-secondary: #494744;
-  --text-muted: #8d8577;
+  --text-secondary: #d8cdb5;
+  --text-muted: #b7ab93;
   --text-inverse: #ffffff;
 
   /* =========================

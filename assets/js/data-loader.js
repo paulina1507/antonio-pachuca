@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navRight.innerHTML = navLeft.innerHTML + navRight.innerHTML;
         navLeft.style.display = "none";
       }
-      
+
       /* =====================================================
          HERO
          ===================================================== */
@@ -138,23 +138,65 @@ document.addEventListener("DOMContentLoaded", () => {
       const locationGrid = document.getElementById("locationGrid");
 
       if (locationTitle) locationTitle.innerHTML = data.location?.title || "";
+
       if (locationSubtitle)
         locationSubtitle.innerHTML = data.location?.subtitle || "";
+
       if (locationDate) locationDate.innerHTML = data.location?.dateText || "";
 
       if (locationGrid && data.location?.places) {
         locationGrid.innerHTML = "";
+
+        // ✨ Detectar si solo hay una ubicación
+        if (data.location.places.length === 1) {
+          locationGrid.classList.add("location-grid--single");
+        } else {
+          locationGrid.classList.remove("location-grid--single");
+        }
+
         data.location.places.forEach((place) => {
           locationGrid.innerHTML += `
-            <div class="location-card reveal-zoom">
-              <h3 class="location-card-title">${place.title}</h3>
-              <p class="location-time">${place.time}</p>
-              <img src="${place.image}">
-              <p class="location-place">${place.place}</p>
-              <p class="location-address">${place.address}</p>
-              <a href="${place.map}" class="btn btn-primary" target="_blank">Ver mapa</a>
-            </div>
-          `;
+      <div class="location-card reveal-zoom">
+
+        <div class="location-image-wrapper">
+          <img src="${place.image}" alt="${place.place}">
+        </div>
+
+        <div class="location-content">
+
+          <h3 class="location-card-title">
+            ${place.title}
+          </h3>
+
+          <p class="location-time">
+            ${place.time}
+          </p>
+
+          <p class="location-place">
+            ${place.place}
+          </p>
+
+          <p class="location-address">
+            ${place.address}
+          </p>
+
+          ${
+            place.map
+              ? `
+            <a 
+              href="${place.map}" 
+              class="btn btn-primary" 
+              target="_blank"
+            >
+              Ver ubicación
+            </a>
+          `
+              : ""
+          }
+
+        </div>
+      </div>
+    `;
         });
       }
 

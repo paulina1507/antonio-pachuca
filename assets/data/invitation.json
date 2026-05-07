@@ -54,7 +54,7 @@
   },
   "gratitude": {
     "title": "Gracias por acompañarme",
-    "text": "Gracias por formar parte de mi vida y compartir este momento tan importante. ¡Prepárate para una noche increíble!"
+    "text": "Gracias por formar parte de este momento tan especial. Para disfrutar plenamente de la velada, esta celebración estará reservada solo para adultos. ¡Será una noche inolvidable!"
   },
   "location": {
     "title": "Celebración",
@@ -104,7 +104,7 @@
     "womenTitle": "",
     "men": [],
     "women": [],
-    "note": "Vestimenta elegante en tonos oscuros, negro y dorado ✨"
+    "note": "CÓCTEL"
   },
   "gifts": {
     "title": "Tu presencia es mi mejor regalo",
@@ -130,16 +130,13 @@
     ]
   },
   "rsvp": {
-    "phone": "5210000000000",
+    "phone": "522221563846",
     "title": "Confirmación de Asistencia",
     "intro": "Será un honor contar contigo en esta noche tan especial. Por favor confirma tu asistencia.",
     "fields": {
       "namePlaceholder": "Nombre completo",
       "attendancePlaceholder": "¿Podrás acompañarnos?",
-      "attendanceOptions": [
-        "Sí asistiré",
-        "No podré asistir"
-      ],
+      "attendanceOptions": ["Sí asistiré", "No podré asistir"],
       "messagePlaceholder": "Escribe un mensaje",
       "buttonText": "Confirmar por WhatsApp"
     },
