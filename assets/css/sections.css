@@ -49,9 +49,10 @@
 .gratitude-text {
   font-family: var(--font-base);
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: var(--color-gold);
   line-height: 1.8;
   margin: 3rem 0 2rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 /* =====================================================
    PRESENTACIÓN (USA EL SISTEMA ENMARCADO)
@@ -117,9 +118,10 @@
 .presentation-text {
   font-family: var(--font-base);
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: var(--color-gold);
   line-height: 1.7;
   margin: 3rem 0 2.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 .presentation-icon {
