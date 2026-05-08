@@ -291,62 +291,12 @@
         </div>
       </div>
     </footer>
-    <script>
-      document
-        .getElementById("rsvpForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const nombre = document.getElementById("rsvpName").value.trim();
-          const asistencia = document.getElementById("rsvpAttendance").value;
-          const mensaje = document.getElementById("rsvpMessage").value.trim();
-
-          if (!nombre) return alert("Por favor escribe tu nombre 😊");
-          if (!asistencia) return alert("Selecciona tu respuesta 😊");
-
-          const numeroFiesta = window.invitationData?.rsvp?.phone;
-          if (!numeroFiesta) return alert("Falta configurar el WhatsApp.");
-
-          // 👇 Tomamos el nombre del evento desde el JSON
-          const nombreEvento =
-            document.getElementById("heroNames")?.textContent.trim() ||
-            "el niño";
-
-          let textoWA = "";
-
-          if (asistencia === "Sí asistiré") {
-            textoWA = `Hola
-Soy ${nombre}.
-Con mucha alegría confirmo mi asistencia al Bautizo de ${nombreEvento}.
-${mensaje ? `Mi mensaje: ${mensaje}` : "Nos vemos pronto "}`;
-          } else {
-            textoWA = `Hola
-Soy ${nombre}.
-Lamentablemente no podré acompañarlos en el Bautizo de ${nombreEvento}.
-${mensaje ? `Mi mensaje: ${mensaje}` : "Les mando un abrazo con cariño "}`;
-          }
-
-          const url = `https://wa.me/${numeroFiesta}?text=${encodeURIComponent(textoWA)}`;
-          window.open(url, "_blank");
-
-          const ok = document.getElementById("rsvpSuccess");
-          if (ok) {
-            ok.classList.remove("hidden");
-
-            ok.textContent =
-              asistencia === "Sí asistiré"
-                ? `¡Gracias ${nombre}! Tu confirmación fue enviada 🤍`
-                : `Gracias ${nombre} por avisarnos 🤍`;
-          }
-
-          this.reset();
-        });
-    </script>
-
+    
     <!-- JS -->
     <script src="assets/js/data-loader.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/rsvp.js"></script>
   </body>
 </html>
