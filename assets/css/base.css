@@ -229,7 +229,7 @@ p {
   width: 420px;
   height: 235px;
   position: relative;
-  background: var(--color-envelope);
+  background: transparent;
   perspective: 1000px;
   overflow: hidden;
 
@@ -300,7 +300,9 @@ p {
 /* solapa superior (más clara y marcada) */
 .flap.top {
   border-width: 125px 210px;
-  border-top-color:var(--color-envelope);
+
+  border-top-color: var(--color-accent);
+
   border-left-color: rgba(255, 255, 255, 0.001);
   border-right-color: rgba(255, 255, 255, 0.001);
   border-bottom-color: rgba(255, 255, 255, 0.001);
@@ -309,8 +311,8 @@ p {
   z-index: 4;
 
   box-shadow:
-    inset 0 -1px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -12px 18px rgba(0, 0, 0, 0.06);
+    inset 0 -2px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -18px 26px rgba(0, 0, 0, 0.12);
 }
 
 /* ============================= */
@@ -398,21 +400,11 @@ p {
   .envelope {
     width: 320px;
     height: 180px;
-
-    box-shadow:
-      inset 0 2px 0 rgba(255, 255, 255, 0.35),
-      0 12px 28px rgba(0, 0, 0, 0.28);
   }
 
   /* SOLAPA FRONTAL */
   .flap.front {
     border-width: 90px 160px;
-
-    border-left-color: var(--color-envelope);
-    border-right-color: var(--color-envelope);
-    border-bottom-color: var(--color-envelope);
-
-    border-top-color: rgba(255, 255, 255, 0.001);
   }
 
   .flap.front::after {
@@ -420,32 +412,17 @@ p {
     bottom: -90px;
 
     border-width: 88px 160px;
-
-    border-bottom-color: rgba(0, 0, 0, 0.06);
-
-    border-left-color: rgba(255, 255, 255, 0.001);
-    border-right-color: rgba(255, 255, 255, 0.001);
-    border-top-color: rgba(255, 255, 255, 0.001);
   }
 
   /* SOLAPA SUPERIOR */
   .flap.top {
     border-width: 95px 160px;
-
-    border-top-color: var(--color-envelope);
-
-    border-left-color: rgba(255, 255, 255, 0.001);
-    border-right-color: rgba(255, 255, 255, 0.001);
-    border-bottom-color: rgba(255, 255, 255, 0.001);
   }
 
   /* SELLO */
   .seal img {
     width: 82px;
     height: 82px;
-
-    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25))
-      drop-shadow(0 2px 3px rgba(255, 255, 255, 0.25));
   }
 }
 
